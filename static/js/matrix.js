@@ -21,7 +21,7 @@ var matrix = function(args){
         k *= args[i];
         for(j=0;j<L;j++)
         {
-           this.ia[i].push(j%k);
+           this.ia[i].push(parseInt(j/k));
         }
     }
 
