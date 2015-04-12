@@ -1,11 +1,8 @@
 # NumAna
 Numeric Analysis Utilities.
 
-
 # TODO:
-Matrix.
-Statistic.
 
-#### Xuxiao
+Matrix Classes.
 
-#### Clay
+Statistics.

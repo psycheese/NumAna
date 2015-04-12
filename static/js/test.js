@@ -63,5 +63,13 @@ test.Secant = function()
 };
 
 
-test.Secant();
+test.Matrix = function()
+{
+    var m = new matrix([2,4,5,5]);
+    log(m);
 
+};
+
+//test.Secant();
+
+test.Matrix();
