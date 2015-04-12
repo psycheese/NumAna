@@ -13,13 +13,15 @@ var matrix = function(args){
     }
 
     // initialize the index array
+    var k=1;
     for(i=0;i<args.length;i++)
     {
 
         this.ia.push([]);
+        k *= args[i];
         for(j=0;j<L;j++)
         {
-           this.ia[i].push(j%args[i]);
+           this.ia[i].push(j%k);
         }
     }
 
