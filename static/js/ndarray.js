@@ -1,6 +1,6 @@
-// Matrix constructor
+// ndarray constructor
 // @param args - array of dimensions e.g. [2,3,3]
-var matrix = function(args){
+var ndarray = function(args){
 
     this.d = args; // dimensions
     this.ia = new Array(args.length); // index arrays
@@ -30,9 +30,9 @@ var matrix = function(args){
 
 };
 
-matrix.prototype.item = function(d){
+ndarray.prototype.item = function(d){
 
 };
 
-//var m=new matrix([5,5,6,11]);
-//console.log("matrix:",m);
+//var m=new ndarray([5,5,6,11]);
+//console.log("ndarray:",m);

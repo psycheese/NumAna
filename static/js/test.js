@@ -63,13 +63,13 @@ test.Secant = function()
 };
 
 
-test.Matrix = function()
+test.ndarray = function()
 {
-    var m = new matrix([2,4,5,5]);
+    var m = new ndarray([2,4,5,5]);
     log(m);
 
 };
 
 //test.Secant();
 
-test.Matrix();
+test.ndarray();
