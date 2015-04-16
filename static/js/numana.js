@@ -92,7 +92,7 @@ eqsolve = {
 
 
 
-var Exec = function(f){
+var Exec = function(f,autolog){
     var d = new Date();
     var st,ed,delta;
     var r;
@@ -103,8 +103,10 @@ var Exec = function(f){
     if(r){}else{r="NULL";}
 
     delta = ed.getTime()-st.getTime();
-
-    log("Result:"+r+","+"Time:"+delta,true);
+    if(autolog)
+    {
+        log("Result:"+r+","+"Time:"+delta,true);
+    }
     return{result:r,time:delta};
 };
 
