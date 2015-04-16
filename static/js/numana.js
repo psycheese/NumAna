@@ -97,14 +97,15 @@ var Exec = function(f){
     var st,ed,delta;
     var r;
 
-    st= (new Date()).getMilliseconds();
+    st= new Date();
     r = f();
-    ed= (new Date()).getMilliseconds();
+    ed= new Date();
     if(r){}else{r="NULL";}
 
-    delta = ed-st;
+    delta = ed.getTime()-st.getTime();
 
     log("Result:"+r+","+"Time:"+delta,true);
+    return{result:r,time:delta};
 };
 
 
